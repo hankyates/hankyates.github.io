@@ -91,6 +91,11 @@ module.exports = function(grunt) {
     // Before generating new files remove files from previous build.
     clean: {
       tmp: ['tmp/**/*', 'site/*.html']
+    },
+    build_gh_pages: {
+      options: {
+        dist: '<%= site.destination %>'
+      }
     }
   });
 
@@ -99,6 +104,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-build-gh-pages');
 
   // Default tasks to be run.
   grunt.registerTask('default', [
