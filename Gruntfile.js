@@ -94,7 +94,8 @@ module.exports = function(grunt) {
     },
     'gh-pages': {
       options: {
-        base: 'site'
+        base: 'site',
+        branch: 'master'
       },
       src: ['**']
     }
