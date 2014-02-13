@@ -92,10 +92,11 @@ module.exports = function(grunt) {
     clean: {
       tmp: ['tmp/**/*', 'site/*.html']
     },
-    build_gh_pages: {
+    'gh-pages': {
       options: {
-        dist: '<%= site.destination %>'
-      }
+        base: 'site'
+      },
+      src: ['**']
     }
   });
 
@@ -104,7 +105,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-build-gh-pages');
+  grunt.loadNpmTasks('grunt-gh-pages');
 
   // Default tasks to be run.
   grunt.registerTask('default', [
