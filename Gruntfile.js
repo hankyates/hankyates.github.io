@@ -25,6 +25,18 @@ module.exports = function(grunt) {
       }
     },
 
+    less: {
+      development: {
+        files: [{
+          expand: true,
+          cwd: 'src/less/',
+          src: ['styles.less'],
+          dest: 'site/css/',
+          ext: '.css'
+        }]
+      }
+    },
+
     copy: {
       layout: {
         options: {
@@ -106,12 +118,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-gh-pages');
 
   // Default tasks to be run.
   grunt.registerTask('default', [
     'test',
-    'copy:layout',
+    'less',
     'copy:content',
     'assemble',
     'copy:essentials'
