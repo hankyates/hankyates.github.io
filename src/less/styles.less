@@ -22,10 +22,27 @@ main {
   height: 300px;
   h2 {
     position: absolute;
+    margin: 0;
   }
   p {
     height: 40px;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+  &:hover {
+    p {
+      animation-duration: 3s;
+      animation-name: slideright;
+    }
+  }
+}
+
+@keyframes slideright {
+  from {
+    margin-bottom: 100%;
+  }
+
+  to {
+    margin-bottom: 0%;
   }
 }

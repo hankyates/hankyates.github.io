@@ -96,11 +96,24 @@ module.exports = function(grunt) {
       }
     },
 
-    uglify: {
-      // concat and minify scripts
+    watch: {
+      scripts: {
+        files: 'src/**/*',
+        tasks: 'default'
+      },
+      css: {
+        files: 'src/**/*.less',
+        tasks: 'css'
+      }
     },
 
-    // Before generating new files remove files from previous build.
+    autoprefixer: {
+      css: {
+        src: 'site/css/styles.css',
+        dest: 'site/css/styles.css'
+      }
+    },
+
     clean: {
       tmp: ['tmp/**/*', 'site/*.html']
     },
@@ -119,6 +132,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-gh-pages');
 
   // Default tasks to be run.
@@ -127,7 +142,15 @@ module.exports = function(grunt) {
     'less',
     'copy:content',
     'assemble',
-    'copy:essentials'
+    'copy:essentials',
+    'autoprefixer:css'
+  ]);
+
+  grunt.registerTask('css', [
+    'less',
+    'copy:content',
+    'copy:essentials',
+    'autoprefixer:css'
   ]);
 
   // Linting and tests.
