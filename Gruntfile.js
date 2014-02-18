@@ -38,6 +38,15 @@ module.exports = function(grunt) {
     },
 
     copy: {
+      assets: {
+        files: [{
+            flatten: true,
+            expand: true,
+            src: ['src/img/**/*'],
+            dest: 'tmp/content/img'
+          }
+        ]
+      },
       layout: {
         options: {
           processContent: function(content) {
@@ -140,6 +149,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     'test',
     'less',
+    'copy:assets',
     'copy:content',
     'assemble',
     'copy:essentials',
@@ -148,6 +158,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('css', [
     'less',
+    'copy:assets',
     'copy:content',
     'copy:essentials',
     'autoprefixer:css'
