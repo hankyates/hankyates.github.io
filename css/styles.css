@@ -1,23 +1,44 @@
 body {
-  background-color: #fff;
+  background-color: #515151;
+  color: #232122;
+}
+a {
+  text-decoration: none;
+  color: #232122;
+}
+a:hover {
+  color: #b1171f;
 }
 header {
   display: inline-block;
-  vertical-align: middle;
-  background-color: #fff;
+  background-color: #eeeeee;
   position: fixed;
   top: 0;
   width: 100%;
   height: 3em;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 3px solid #00b4ff;
   z-index: 100;
+  line-height: 2.8em;
+}
+header a.name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  padding: 0 0 0 1.4em;
+}
+header .social {
+  float: right;
+}
+header .social .icon {
+  width: 2em;
+  height: 2em;
+  margin: 0 0.7em 0 0;
 }
 main {
   margin-top: 3em;
   padding: 3em;
+  background-color: #515151;
 }
 .project-card {
-  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 300px;
@@ -26,7 +47,6 @@ main {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /*overflow: hidden;*/
 }
 .project-card .meta {
   position: absolute;
@@ -35,6 +55,10 @@ main {
 }
 .project-card h2 {
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6em;
+  text-stroke: 1px #eeeeee;
+  -webkit-text-stroke: 1px #eeeeee;
 }
 .project-card p {
   height: 40px;
@@ -51,13 +75,11 @@ main {
   background-size: 7em;
   width: 7em;
   height: 7em;
-  position: relative;
-  right: -100%;
   -webkit-transform: scale(4);
   -ms-transform: scale(4);
   transform: scale(4);
   opacity: 0;
-  z-index: -1000;
+  z-index: -100;
   -webkit-transition: right 500ms, -webkit-transform 500ms, z-index 250ms, opacity 250ms;
   transition: right 500ms, transform 500ms, z-index 250ms, opacity 250ms;
   -webkit-transition-timing-function: easeOutCubic;
@@ -70,7 +92,7 @@ main {
   position: relative;
   top: 3.6em;
   left: 1em;
-  color: #fff;
+  color: #eeeeee;
 }
 .project-card:hover p {
   opacity: 1;
@@ -78,7 +100,7 @@ main {
   transition: opacity 500ms;
 }
 .project-card:hover .tag {
-  z-index: 1000;
+  z-index: 100;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -92,12 +114,4 @@ main {
 .project-card:hover .tag:nth-of-type(2) {
   -webkit-transition-delay: 500ms;
   transition-delay: 500ms;
-}
-.social {
-  display: inline-block;
-}
-.icon {
-  width: 2em;
-  height: 2em;
-  margin: 0 0.5em 0 0;
 }
