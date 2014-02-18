@@ -50,26 +50,27 @@ main {
   }
 
   .tag {
-    display: inline-block;
+    float: left;
     background-image: url('../img/tag.png');
-    background-size: 50em;
-    overflow: visible;
+    background-size: 7em;
     width: 7em;
     height: 7em;
-    color: #fff;
     position: relative;
     right: -100%;
     opacity: 0;
     transition: opacity 1s;
     transition: all 1s;
     transition-timing-function: easeOutCubic;
+    transform: scale(4);
+    z-index: 1000;
     div {
+      transform: rotate(45deg);
+      opacity: 1;
+      transition: all 1.5s linear;
       position: relative;
       top: 3.6em;
       left: 1em;
-      transform: rotate(45deg);
-      opacity: 0;
-      transition: opacity 1.5s linear;
+      color: #fff;
     }
   }
 
@@ -80,18 +81,16 @@ main {
       transition: opacity 500ms;
     }
     .tag {
-      background-size: 7em;
-      width: 7em;
-      height: 7em;
+      transform: scale(1);
       right: 0%;
       opacity: 1;
       transition: opacity 1ms;
-      transition: all 1s;
+      transition: all 500ms;
       transition-timing-function: easeInQuad;
       div {
         opacity: 1;
-        transition: opacity 1s linear;
-        transition-delay: 1s;
+        transform: rotate(45deg);
+        transition: all 500ms easeInQuad;
       }
     }
     .tag:nth-of-type(2) {
