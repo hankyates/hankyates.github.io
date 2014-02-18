@@ -1,7 +1,10 @@
 <div class="project-card">
-  <span class="meta">
+  <div class="meta">
     <h2>{{title}}</h2>
     <p>{{description}}</p>
-  </span>
+    {{#each tags}}
+      <div class="tag"><div>{{this}}</div></div>
+    {{/each}}
+  </div>
   <img src="{{img}}" alt="" />
 </div>

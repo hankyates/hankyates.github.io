@@ -3,60 +3,70 @@
     "title": "American Express Travel Solutions",
     "link": "http://amextravel.com/",
     "description": "While working at iSeatz I was part of a team that launch the Travel Solutions application for www.amextravel.com.",
-    "img": "http://placehold.it/300x300"
+    "img": "http://placehold.it/300x300",
+    "tags": ["Backbone.js", "Rails"]
   },
   "Alaska": {
     "title": "Alaska Air Hotel Search Results Map",
     "link": "http://alaskaair.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat euismod gravida. Sed vitae tellus et lectus ultrices pulvinar. Nam in lacinia nibh. Vestibulum in laoreet erat. Nunc vestibulum dui in metus vehicula, in ultricies nulla convallis. Praesent vel sollicitudin lacus. Etiam ut nisi vitae diam iaculis porttitor non ac leo. Fusce in varius dolor. Phasellus massa nibh, faucibus eget tellus eu, tempor tempor erat. Fusce auctor, lectus ac scelerisque tincidunt, orci arcu tincidunt dolor, quis consectetur enim eros et ligula. Ut sodales, dui ut vestibulum congue, ipsum justo aliquet leo, nec porttitor lacus nibh varius enim.",
-    "img": "http://placehold.it/300x300"
+    "img": "http://placehold.it/300x300",
+    "tags": ["Rails"]
   },
   "wwoz": {
     "title": "WWOZ Redesign",
     "link": "http://wwoz.org/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat euismod gravida. Sed vitae tellus et lectus ultrices pulvinar. Nam in lacinia nibh. Vestibulum in laoreet erat. Nunc vestibulum dui in metus vehicula, in ultricies nulla convallis. Praesent vel sollicitudin lacus. Etiam ut nisi vitae diam iaculis porttitor non ac leo. Fusce in varius dolor. Phasellus massa nibh, faucibus eget tellus eu, tempor tempor erat. Fusce auctor, lectus ac scelerisque tincidunt, orci arcu tincidunt dolor, quis consectetur enim eros et ligula. Ut sodales, dui ut vestibulum congue, ipsum justo aliquet leo, nec porttitor lacus nibh varius enim.",
-    "img": "http://placehold.it/300x300"
+    "img": "http://placehold.it/300x300",
+    "tags": ["Drupal"]
   },
   "wwoz_mobile": {
     "title": "WWOZ Mobile",
     "link": "http://www.wwoz.org/new-orleans-community/music-calendar",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat euismod gravida. Sed vitae tellus et lectus ultrices pulvinar. Nam in lacinia nibh. Vestibulum in laoreet erat. Nunc vestibulum dui in metus vehicula, in ultricies nulla convallis. Praesent vel sollicitudin lacus. Etiam ut nisi vitae diam iaculis porttitor non ac leo. Fusce in varius dolor. Phasellus massa nibh, faucibus eget tellus eu, tempor tempor erat. Fusce auctor, lectus ac scelerisque tincidunt, orci arcu tincidunt dolor, quis consectetur enim eros et ligula. Ut sodales, dui ut vestibulum congue, ipsum justo aliquet leo, nec porttitor lacus nibh varius enim.",
-    "img": "http://placehold.it/300x300"
+    "img": "http://placehold.it/300x300",
+    "tags": ["Drupal"]
   },
   "ldwf": {
     "title": "Louisiana Department of Wildlife and Fisheries Redesign",
     "link": "http://wlf.louisiana.gov/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat euismod gravida. Sed vitae tellus et lectus ultrices pulvinar. Nam in lacinia nibh. Vestibulum in laoreet erat. Nunc vestibulum dui in metus vehicula, in ultricies nulla convallis. Praesent vel sollicitudin lacus. Etiam ut nisi vitae diam iaculis porttitor non ac leo. Fusce in varius dolor. Phasellus massa nibh, faucibus eget tellus eu, tempor tempor erat. Fusce auctor, lectus ac scelerisque tincidunt, orci arcu tincidunt dolor, quis consectetur enim eros et ligula. Ut sodales, dui ut vestibulum congue, ipsum justo aliquet leo, nec porttitor lacus nibh varius enim.",
-    "img": "http://placehold.it/300x300"
+    "img": "http://placehold.it/300x300",
+    "tags": ["Drupal"]
   },
   "daptiv": {
     "title": "Daptiv PPM",
     "link": "http://daptiv.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat euismod gravida. Sed vitae tellus et lectus ultrices pulvinar. Nam in lacinia nibh. Vestibulum in laoreet erat. Nunc vestibulum dui in metus vehicula, in ultricies nulla convallis. Praesent vel sollicitudin lacus. Etiam ut nisi vitae diam iaculis porttitor non ac leo. Fusce in varius dolor. Phasellus massa nibh, faucibus eget tellus eu, tempor tempor erat. Fusce auctor, lectus ac scelerisque tincidunt, orci arcu tincidunt dolor, quis consectetur enim eros et ligula. Ut sodales, dui ut vestibulum congue, ipsum justo aliquet leo, nec porttitor lacus nibh varius enim.",
-    "img": "http://placehold.it/300x300"
+    "img": "http://placehold.it/300x300",
+    "tags": ["Angular.js"]
   },
   "blanchard": {
     "title": "Blanchard Rare Coins Search and SEO solution",
     "link": "http://coins.blanchardonline.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat euismod gravida. Sed vitae tellus et lectus ultrices pulvinar. Nam in lacinia nibh. Vestibulum in laoreet erat. Nunc vestibulum dui in metus vehicula, in ultricies nulla convallis. Praesent vel sollicitudin lacus. Etiam ut nisi vitae diam iaculis porttitor non ac leo. Fusce in varius dolor. Phasellus massa nibh, faucibus eget tellus eu, tempor tempor erat. Fusce auctor, lectus ac scelerisque tincidunt, orci arcu tincidunt dolor, quis consectetur enim eros et ligula. Ut sodales, dui ut vestibulum congue, ipsum justo aliquet leo, nec porttitor lacus nibh varius enim.",
-    "img": "http://placehold.it/300x300"
+    "img": "http://placehold.it/300x300",
+    "tags": ["Wordpress"]
   },
   "louisiana_conservationist": {
     "title": "Louisiana Conservationist",
     "link": "http://louisianaconservationist.org/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat euismod gravida. Sed vitae tellus et lectus ultrices pulvinar. Nam in lacinia nibh. Vestibulum in laoreet erat. Nunc vestibulum dui in metus vehicula, in ultricies nulla convallis. Praesent vel sollicitudin lacus. Etiam ut nisi vitae diam iaculis porttitor non ac leo. Fusce in varius dolor. Phasellus massa nibh, faucibus eget tellus eu, tempor tempor erat. Fusce auctor, lectus ac scelerisque tincidunt, orci arcu tincidunt dolor, quis consectetur enim eros et ligula. Ut sodales, dui ut vestibulum congue, ipsum justo aliquet leo, nec porttitor lacus nibh varius enim.",
-    "img": "http://placehold.it/300x300"
+    "img": "http://placehold.it/300x300",
+    "tags": ["Wordpress"]
   },
   "c4": {
     "title": "C4 Tech and Design Redesign",
     "link": "http://www.c4tech.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat euismod gravida. Sed vitae tellus et lectus ultrices pulvinar. Nam in lacinia nibh. Vestibulum in laoreet erat. Nunc vestibulum dui in metus vehicula, in ultricies nulla convallis. Praesent vel sollicitudin lacus. Etiam ut nisi vitae diam iaculis porttitor non ac leo. Fusce in varius dolor. Phasellus massa nibh, faucibus eget tellus eu, tempor tempor erat. Fusce auctor, lectus ac scelerisque tincidunt, orci arcu tincidunt dolor, quis consectetur enim eros et ligula. Ut sodales, dui ut vestibulum congue, ipsum justo aliquet leo, nec porttitor lacus nibh varius enim.",
-    "img": "http://placehold.it/300x300"
+    "img": "http://placehold.it/300x300",
+    "tags": ["Drupal"]
   },
   "datatrail": {
     "title": "Data Trail",
     "link": "http://github.com/hankyates/datarail",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat euismod gravida. Sed vitae tellus et lectus ultrices pulvinar. Nam in lacinia nibh. Vestibulum in laoreet erat. Nunc vestibulum dui in metus vehicula, in ultricies nulla convallis. Praesent vel sollicitudin lacus. Etiam ut nisi vitae diam iaculis porttitor non ac leo. Fusce in varius dolor. Phasellus massa nibh, faucibus eget tellus eu, tempor tempor erat. Fusce auctor, lectus ac scelerisque tincidunt, orci arcu tincidunt dolor, quis consectetur enim eros et ligula. Ut sodales, dui ut vestibulum congue, ipsum justo aliquet leo, nec porttitor lacus nibh varius enim.",
-    "img": "http://placehold.it/300x300"
+    "img": "http://placehold.it/300x300",
+    "tags": ["CreateJs"]
   }
 }
