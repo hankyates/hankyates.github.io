@@ -57,16 +57,13 @@ main {
     height: 7em;
     position: relative;
     right: -100%;
-    opacity: 0;
-    transition: opacity 1s;
-    transition: all 1s;
-    transition-timing-function: easeOutCubic;
     transform: scale(4);
-    z-index: 1000;
+    opacity: 0;
+    z-index: -1000;
+    transition: right 500ms,  transform 500ms, z-index 250ms, opacity 250ms;
+    transition-timing-function: easeOutCubic;
     div {
       transform: rotate(45deg);
-      opacity: 1;
-      transition: all 1.5s linear;
       position: relative;
       top: 3.6em;
       left: 1em;
@@ -81,17 +78,12 @@ main {
       transition: opacity 500ms;
     }
     .tag {
+      z-index: 1000;
       transform: scale(1);
       right: 0%;
       opacity: 1;
-      transition: opacity 1ms;
-      transition: all 500ms;
+      transition: opacity 750ms, right 750ms, transform 750ms, z-index 1ms;
       transition-timing-function: easeInQuad;
-      div {
-        opacity: 1;
-        transform: rotate(45deg);
-        transition: all 500ms easeInQuad;
-      }
     }
     .tag:nth-of-type(2) {
       transition-delay: 500ms;
