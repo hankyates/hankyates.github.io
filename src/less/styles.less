@@ -1,35 +1,67 @@
+@off-white: #EEEEEE;
+@off-black: #232122;
+@red: #B1171F;
+@blue: #00B4FF;
+@dark: #515151;
+
 @top-margin: 3em;
 
 body {
-  background-color: #fff;
+  background-color: @dark;
+  color: @off-black;
+}
+
+a {
+  text-decoration: none;
+  color: @off-black;
+  &:hover {
+    color: @red;
+  }
 }
 
 header {
   display: inline-block;
-  vertical-align: middle;
-  background-color: #fff;
+  background-color: @off-white;
   position: fixed;
   top: 0;
   width: 100%;
   height: @top-margin;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 3px solid @blue;
   z-index: 100;
+  line-height: @top-margin - 0.2;
+
+  a {
+    &.name {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2em;
+      padding: 0 0 0 1.4em;
+    }
+  }
+
+  .social {
+    float: right;
+
+    .icon {
+      width: 2em;
+      height: 2em;
+      margin: 0 0.7em 0 0;
+    }
+  }
 }
 
 main {
   margin-top: @top-margin;
   padding: 3em;
+  background-color: @dark;
 }
 
 .project-card {
-  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 300px;
   height: 300px;
   margin: 0 0.5em 2em 0;
   box-sizing: border-box;
-  /*overflow: hidden;*/
 
   .meta {
     position: absolute;
@@ -39,6 +71,10 @@ main {
 
   h2 {
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6em;
+    text-stroke: 1px @off-white;
+    -webkit-text-stroke: 1px @off-white;
   }
 
   p {
@@ -55,11 +91,9 @@ main {
     background-size: 7em;
     width: 7em;
     height: 7em;
-    position: relative;
-    right: -100%;
     transform: scale(4);
     opacity: 0;
-    z-index: -1000;
+    z-index: -100;
     transition: right 500ms,  transform 500ms, z-index 250ms, opacity 250ms;
     transition-timing-function: easeOutCubic;
     div {
@@ -67,7 +101,7 @@ main {
       position: relative;
       top: 3.6em;
       left: 1em;
-      color: #fff;
+      color: @off-white;
     }
   }
 
@@ -78,7 +112,7 @@ main {
       transition: opacity 500ms;
     }
     .tag {
-      z-index: 1000;
+      z-index: 100;
       transform: scale(1);
       right: 0%;
       opacity: 1;
@@ -89,14 +123,4 @@ main {
       transition-delay: 500ms;
     }
   }
-}
-
-.social {
-  display: inline-block;
-}
-
-.icon {
-  width: 2em;
-  height: 2em;
-  margin: 0 0.5em 0 0;
 }
