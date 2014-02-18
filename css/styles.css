@@ -45,14 +45,12 @@ main {
   transition: opacity 1s;
 }
 .project-card .tag {
-  display: inline-block;
+  float: left;
   background-image: url('../img/tag.png');
-  -webkit-background-size: 50em;
-  background-size: 50em;
-  overflow: visible;
+  -webkit-background-size: 7em;
+  background-size: 7em;
   width: 7em;
   height: 7em;
-  color: #fff;
   position: relative;
   right: -100%;
   opacity: 0;
@@ -61,17 +59,22 @@ main {
   transition: all 1s;
   -webkit-transition-timing-function: easeOutCubic;
   transition-timing-function: easeOutCubic;
+  -webkit-transform: scale(4);
+  -ms-transform: scale(4);
+  transform: scale(4);
+  z-index: 1000;
 }
 .project-card .tag div {
-  position: relative;
-  top: 3.6em;
-  left: 1em;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  opacity: 0;
-  -webkit-transition: opacity 1.5s linear;
-  transition: opacity 1.5s linear;
+  opacity: 1;
+  -webkit-transition: all 1.5s linear;
+  transition: all 1.5s linear;
+  position: relative;
+  top: 3.6em;
+  left: 1em;
+  color: #fff;
 }
 .project-card:hover p {
   opacity: 1;
@@ -79,24 +82,24 @@ main {
   transition: opacity 500ms;
 }
 .project-card:hover .tag {
-  -webkit-background-size: 7em;
-  background-size: 7em;
-  width: 7em;
-  height: 7em;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   right: 0%;
   opacity: 1;
   -webkit-transition: opacity 1ms;
   transition: opacity 1ms;
-  transition: all 1s;
+  transition: all 500ms;
   -webkit-transition-timing-function: easeInQuad;
   transition-timing-function: easeInQuad;
 }
 .project-card:hover .tag div {
   opacity: 1;
-  -webkit-transition: opacity 1s linear;
-  transition: opacity 1s linear;
-  -webkit-transition-delay: 1s;
-  transition-delay: 1s;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 500ms easeInQuad;
+  transition: all 500ms easeInQuad;
 }
 .project-card:hover .tag:nth-of-type(2) {
   -webkit-transition-delay: 500ms;
