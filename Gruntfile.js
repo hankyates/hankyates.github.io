@@ -8,32 +8,23 @@
 'use strict';
 
 module.exports = function(grunt) {
-
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+
     site: {
       destination: 'site',
       origin: 'vendor/h5bp'
     },
 
-    // Lint JavaScript
-    jshint: {
-      all: ['Gruntfile.js', 'src/helpers/*.js'],
-      options: {
-        jshintrc: '.jshintrc'
-      }
-    },
-
     less: {
+      options: {
+        metadata: ['src/data/*.json']
+      },
       development: {
-        files: [{
-          expand: true,
-          cwd: 'src/less/',
-          src: ['styles.less'],
-          dest: 'site/css/',
-          ext: '.css'
-        }]
+        files: {
+          'site/css/styles.css': ['src/less/styles.less']
+        }
       }
     },
 
@@ -139,16 +130,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('assemble-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-gh-pages');
 
   // Default tasks to be run.
   grunt.registerTask('default', [
-    'test',
-    'less',
+    'less:development',
     'copy:assets',
     'copy:content',
     'assemble',
@@ -164,6 +153,4 @@ module.exports = function(grunt) {
     'autoprefixer:css'
   ]);
 
-  // Linting and tests.
-  grunt.registerTask('test', ['clean', 'jshint']);
 };

@@ -1,12 +1,12 @@
 {
-  "Amex": {
+  "amex": {
     "title": "American Express Travel Solutions",
     "link": "http://amextravel.com/",
     "description": "While working at iSeatz I was part of a team that launch the Travel Solutions application for www.amextravel.com.",
-    "img": "http://placehold.it/300x300",
+    "img": "https://dl.dropboxusercontent.com/u/2555196/AmexHotel.png",
     "tags": ["Backbone.js", "Rails"]
   },
-  "Alaska": {
+  "alaska": {
     "title": "Alaska Air Hotel Search Results Map",
     "link": "http://alaskaair.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat euismod gravida. Sed vitae tellus et lectus ultrices pulvinar. Nam in lacinia nibh. Vestibulum in laoreet erat. Nunc vestibulum dui in metus vehicula, in ultricies nulla convallis. Praesent vel sollicitudin lacus. Etiam ut nisi vitae diam iaculis porttitor non ac leo. Fusce in varius dolor. Phasellus massa nibh, faucibus eget tellus eu, tempor tempor erat. Fusce auctor, lectus ac scelerisque tincidunt, orci arcu tincidunt dolor, quis consectetur enim eros et ligula. Ut sodales, dui ut vestibulum congue, ipsum justo aliquet leo, nec porttitor lacus nibh varius enim.",

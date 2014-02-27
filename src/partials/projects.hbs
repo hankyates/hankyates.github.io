@@ -1,3 +1,12 @@
 {{#each projects}}
-  {{> project this}}
+  <div class="project-card {{@key}}">
+    <div class="background"></div>
+    <div class="meta">
+      <h2>{{title}}</h2>
+      <p>{{description}}</p>
+      {{#each tags}}
+        <!--<div class="tag"><div>{{this}}</div></div>-->
+      {{/each}}
+    </div>
+  </div>
 {{/each}}
