@@ -17,6 +17,25 @@ module.exports = function(grunt) {
       origin: 'vendor/h5bp'
     },
 
+    requirejs: {
+      compile: {
+        options: {
+          baseUrl: './src/js/',
+          name: 'app',
+          mainConfigFile: 'src/js/requireConfig.js',
+          out: 'site/js/app.js',
+          shim: {
+            lodash: {
+              exports: '_'
+            }
+          },
+          generateSourceMaps: true,
+          preserveLicenseComments: false,
+          optimize: 'uglify2'
+        }
+      }
+    },
+
     less: {
       options: {
         metadata: ['src/data/*.json']
@@ -71,6 +90,16 @@ module.exports = function(grunt) {
             cwd: 'vendor/h5bp/',
             src: ['**/*', '!**/index.html', '!**/docs'],
             dest: 'site'
+          }
+        ]
+      },
+      js: {
+        files: [{
+            flatten: true,
+            expand: true,
+            cwd: 'src/js',
+            src: ['requireConfig.js'],
+            dest: 'site/js'
           }
         ]
       }
@@ -132,6 +161,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('assemble-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-gh-pages');
 
@@ -142,7 +172,9 @@ module.exports = function(grunt) {
     'copy:content',
     'assemble',
     'copy:essentials',
-    'autoprefixer:css'
+    'copy:js',
+    'autoprefixer:css',
+    'requirejs'
   ]);
 
   grunt.registerTask('css', [
