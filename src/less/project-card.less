@@ -1,0 +1,80 @@
+@import 'project-card-animations.less';
+
+.project-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  height: 300px;
+  margin: 0 0.5em 2em 0;
+  box-sizing: border-box;
+
+  .background {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    filter: blur(2px) grayscale(70%);
+    .transition-out;
+  }
+
+  .meta {
+    position: absolute;
+    width: 15em;
+    overflow: visible;
+    margin: 1em 0 0 1em;
+    padding: 1em;
+
+    h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2em;
+      text-stroke: 1px white; }
+
+    p {
+      height: 6em;
+      text-overflow: ellipsis;
+      opacity: 0;
+      transition: opacity 1s;
+    }
+
+    .tag {
+      float: left;
+      background-image: url('../img/tag.png');
+      background-size: 7em;
+      width: 7em;
+      height: 7em;
+      transform: scale(4);
+      opacity: 0;
+      div {
+        transform: rotate(45deg);
+        position: relative;
+        top: 3.6em;
+        left: 1em;
+        color: @off-white;
+      }
+    }
+
+  }
+
+  &.open {
+    .width-step;
+
+    .background {
+      .width-step;
+      .transition-in;
+      filter: blur(2px) grayscale(0%) !important;
+    }
+
+    .meta {
+      width: 33em;
+    }
+
+    p {
+      opacity: 1;
+    }
+
+    .tag {
+      transform: scale(1);
+    }
+
+  }
+
+}
