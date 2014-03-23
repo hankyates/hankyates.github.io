@@ -1,0 +1,64 @@
+.transition-in {
+  transition: all 750ms;
+  transition-timing-function: easeInQuad;
+}
+.transition-out {
+  transition: all 750ms;
+  transition-timing-function: easeOutCube;
+}
+.project-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  height: 300px;
+  margin: 0 0.5em 2em 0;
+  box-sizing: border-box;
+}
+.project-card .background {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  filter: blur(2px) grayscale(70%);
+  transition: all 750ms;
+  transition-timing-function: easeOutCube;
+}
+.project-card .meta {
+  position: absolute;
+  width: 15em;
+  overflow: visible;
+  margin: 1em 0 0 1em;
+  padding: 1em;
+}
+.project-card .meta h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  text-stroke: 1px white;
+}
+.project-card .meta p {
+  height: 6em;
+  text-overflow: ellipsis;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.project-card.open {
+  padding-right: 100px;
+  padding-bottom: 50px;
+  transition: all 750ms;
+  transition-timing-function: easeInQuad;
+}
+.project-card.open .background {
+  padding-right: 100px;
+  padding-bottom: 50px;
+  transition: all 750ms;
+  transition-timing-function: easeInQuad;
+  filter: blur(2px) grayscale(0%) !important;
+}
+.project-card.open .meta {
+  width: 300px;
+  height: 200px;
+  transition: all 750ms;
+  transition-timing-function: easeInQuad;
+}
+.project-card.open p {
+  opacity: 1;
+}

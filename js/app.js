@@ -1,0 +1,2 @@
+define("app",["lodash"],function(e){var n=function(){};return n.prototype.init=function(){var n=document.getElementsByClassName("project-card");e.each(n,function(e){e.addEventListener("click",function(){var e=document.getElementsByClassName("open")[0];e&&e.classList.remove("open"),this.classList.add("open")})})},n});
+//# sourceMappingURL=app.js.map

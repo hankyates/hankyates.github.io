@@ -1,13 +1,9 @@
 .transition-in {
-  -webkit-transition: all 750ms;
   transition: all 750ms;
-  -webkit-transition-timing-function: easeInQuad;
   transition-timing-function: easeInQuad;
 }
 .transition-out {
-  -webkit-transition: all 750ms;
   transition: all 750ms;
-  -webkit-transition-timing-function: easeOutCube;
   transition-timing-function: easeOutCube;
 }
 .project-card {
@@ -16,19 +12,14 @@
   width: 300px;
   height: 300px;
   margin: 0 0.5em 2em 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .project-card .background {
   position: absolute;
   width: 300px;
   height: 300px;
-  -webkit-filter: blur(2px) grayscale(70%);
   filter: blur(2px) grayscale(70%);
-  -webkit-transition: all 750ms;
   transition: all 750ms;
-  -webkit-transition-timing-function: easeOutCube;
   transition-timing-function: easeOutCube;
 }
 .project-card .meta {
@@ -47,27 +38,25 @@
   height: 6em;
   text-overflow: ellipsis;
   opacity: 0;
-  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 .project-card.open {
-  -webkit-transition: all 750ms;
+  padding-right: 100px;
+  padding-bottom: 50px;
   transition: all 750ms;
-  -webkit-transition-timing-function: easeInQuad;
   transition-timing-function: easeInQuad;
 }
 .project-card.open .background {
-  -webkit-transition: all 750ms;
+  padding-right: 100px;
+  padding-bottom: 50px;
   transition: all 750ms;
-  -webkit-transition-timing-function: easeInQuad;
   transition-timing-function: easeInQuad;
-  -webkit-filter: blur(2px) grayscale(0%) !important;
   filter: blur(2px) grayscale(0%) !important;
 }
 .project-card.open .meta {
-  -webkit-transition: all 750ms;
+  width: 300px;
+  height: 200px;
   transition: all 750ms;
-  -webkit-transition-timing-function: easeInQuad;
   transition-timing-function: easeInQuad;
 }
 .project-card.open p {
@@ -111,7 +100,7 @@ header .social .icon {
 }
 main {
   margin-top: 3em;
-  padding: 2em;
+  padding: 3em;
   background-color: #515151;
 }
 .project-card.amex .background {
@@ -143,53 +132,4 @@ main {
 }
 .project-card.datatrail .background {
   background-image: url('http://placehold.it/300x300');
-}
-@media (max-width: 480px) {
-  header {
-    text-align: center;
-    height: 6em;
-  }
-  header a.name {
-    display: block;
-    padding: 0;
-  }
-  header .social {
-    position: static;
-    display: block;
-  }
-  main {
-    margin-top: 6em;
-    padding: 1em 0.1em;
-  }
-  .project-card {
-    margin-right: 0;
-  }
-  .project-card.open {
-    min-height: 500px;
-    z-index: 10;
-  }
-  .project-card.open .background {
-    min-height: 500px;
-  }
-}
-@media (min-width: 321px) and (max-width: 768px) {
-  main {
-    padding: 1em 4em;
-  }
-  .project-card.open {
-    width: 614px;
-    height: 500px;
-    z-index: 10;
-  }
-  .project-card.open .background {
-    width: 614px;
-    height: 500px;
-  }
-  .project-card.open .meta {
-    width: 35em;
-    height: auto;
-  }
-  .project-card.open p {
-    height: auto;
-  }
 }
