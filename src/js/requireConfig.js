@@ -12,5 +12,5 @@ require.config({
 
 require(['app'], function(App) {
   var app = new App();
-  window.onload = app.init;
+  app.init();
 });

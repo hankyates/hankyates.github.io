@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        {{#isnt basename "index"}}<title>{{titleize basename}}</title>{{else}}<title>Home</title>{{/isnt}}
+        {{#isnt basename "index"}}<title>{{titleize basename}}</title>{{else}}<title>Hank Yates - Javascript Engineer</title>{{/isnt}}
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script data-main="js/requireConfig.js" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -23,8 +25,6 @@
         {{> header }}
 
         {{> body }}
-
-        <script data-main="js/requireConfig.js" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
